@@ -24,6 +24,11 @@ public class AccessFilter extends ZuulFilter {
     /**
      * 过滤器的类型，它决定过滤器在请求的哪个生命周期中执行。这里定义为pre，代表会在请求被路由之前执行。
      *
+     * pre：可以在请求被路由之前调用。
+     * routing：在路由请求时候被调用。
+     * post：在routing和error过滤器之后被调用。
+     * error：处理请求时发生错误时被调用。
+     *
      * @return
      */
     @Override
