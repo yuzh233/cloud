@@ -1,0 +1,13 @@
+# \u7528\u6765\u5411\u914D\u7F6E\u4E2D\u5FC3\u83B7\u53D6\u914D\u7F6E\u6587\u4EF6
+# \u8BBF\u95EE\u65B9\u5F0F\uFF1Ahttp://localhost:1201/config-server-dev.yml / http://localhost:1201/config-client/dev/master
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yuzh233/config-repo-demo # \u914D\u7F6E\u4E2D\u5FC3\u670D\u52A1\u5668\u5730\u5740
+server:
+  port: 1201

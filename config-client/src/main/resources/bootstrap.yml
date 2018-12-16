@@ -1,0 +1,14 @@
+# 用来指定获取配置文件的 config-server-git 位置
+# 访问方式 http://localhost:2002/info
+
+spring:
+  application:
+    name: config-client # 对应的配置中心的配置文件名如： config-client.yml
+  cloud:
+    config:
+      uri: http://localhost:1201/ # 配置中心服务器的位置
+      profile: dev # 所使用的环境
+      label: master # 所引用的分支
+
+server:
+  port: 2002

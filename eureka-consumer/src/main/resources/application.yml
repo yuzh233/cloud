@@ -1,0 +1,10 @@
+server:
+  port: 2101
+spring:
+  application:
+    name: eurela-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/

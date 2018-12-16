@@ -1,0 +1,14 @@
+server:
+  port: 2002
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: eureka-client2 # 微服务别名
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+spring:
+  application:
+    name: eureka-client # 使用该名称作为微服务调用
+
+

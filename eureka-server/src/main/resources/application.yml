@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 1001
+eureka:
+  instance:
+    hostname: localhost
+
+  client:
+    register-with-eureka: false # \u9ED8\u8BA4\u670D\u52A1\u6CE8\u518C\u4E2D\u5FC3\u4E5F\u4F1A\u5C06\u81EA\u5DF1\u4F5C\u4E3A\u5BA2\u6237\u7AEF\u6765\u6CE8\u518C\u81EA\u5DF1\uFF0C\u6211\u4EEC\u4E0D\u9700\u8981\u6CE8\u518C\u4E2D\u5FC3\u6CE8\u518C\u81EA\u5DF1\uFF0C\u6240\u4EE5\u7981\u7528\u6389
+    fetch-registry: false

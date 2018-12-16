@@ -1,0 +1,15 @@
+server:
+  port: 2023
+
+spring:
+  application:
+    name: eureka-consuer-feign # \u670D\u52A1\u540D
+
+eureka:
+  instance:
+    instance-id: eureka-consuer-feign # \u670D\u52A1\u522B\u540D
+    hostname: localhost
+
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka
